@@ -1,3 +1,3 @@
 # Quargle.github.io
 
-test repoitory for hosting website
+test repository for hosting website
