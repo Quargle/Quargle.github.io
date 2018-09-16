@@ -1,0 +1,83 @@
+/* CSS stylesheet used for Squirrel project  */
+/* Used by Squirrels_Rest.html  */
+/* Used by Helping_Paw.html  */
+
+body{
+    /*background-color: lightblue;*/
+}
+
+a {
+  color: #204156;
+  text-decoration: none;
+}
+
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Contents*/
+
+#Contents{
+  margin: 2px;
+  text-align: center;
+  padding: 5px;
+  }
+
+#Contents li {
+  display: inline;
+  padding: 10px
+}
+
+/* Header */
+#Squirrel_Header{
+	/*margin: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: 'Trebuchet MS', 'Helvetica';*/
+    }
+
+#Squirrel_Header .image_container{
+    /*background-image: url("./pictures/Pete_Saundersfoot_Beach.jpg");
+    background-position: center top;
+	background-size: cover;*/
+	position: center top;
+	size: cover;
+}
+
+#Squirrel_Header .h1{
+    text-align: center;
+}
+
+/* About */
+#About{
+    text-align: center;
+    font-family: Calibri; serif;
+}
+
+/* Staff */
+#Staff h2{
+    text-align: center;
+    font-family: Calibri; serif;
+    color: black;
+}
+
+#Staff #intro{
+    text-align: center;
+    font-family: Calibri; serif;
+    color: black;
+}
+
+
+h1 {
+	color: green;
+	font-size: 56px;
+}
+
+p{color: black; font-family: calibri;}
