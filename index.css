@@ -1,0 +1,11 @@
+
+.product_type{
+    display: flexbox;
+    border: 1px solid black;
+}
+
+.site_type{
+    display: flexbox;
+    border: 1px solid black;
+
+}
