@@ -135,6 +135,10 @@ html {
     background-color: #457b9d;
   }
 
+  .category-header h4 {
+    padding: 0.5em 1em;
+  }
+
   .category-content {
     display: flex;
     justify-content:space-evenly;
