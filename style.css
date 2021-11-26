@@ -184,14 +184,7 @@ html {
     flex-direction: column;
     color: #233036;
   }
-  
-  /*
-  #eddy-tile {
-    background-image: url('https://cerberusnuclear.com/wp-content/uploads/2020/10/eddy-screen-shot-2.jpg');
-    background-size: 100% 100%;
-  }
-  */
-  
+   
   #contact-section {
     display: flex;
     flex-direction: column;
@@ -219,15 +212,20 @@ html {
     justify-content: center;
     align-items: center;
   }
-  
-  #contact-section-body a {
-    margin: 1rem;
-    width: fit-content;
+
+  .contact-tile{
+    width: fit-content;    
+    height:fit-content;
+    margin: 3rem;
     padding: 3rem 5rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    color: #233036;
+    border-radius: 1rem;
     background-color: #457b9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #233036;
     text-decoration: none;
     font-size: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.2rem #222222;
+  }
