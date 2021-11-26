@@ -1,3 +1,3 @@
 # Quargle.github.io
 
-test repository for hosting website
+Repository for my web design portfolio on Gihub Pages

@@ -1,0 +1,68 @@
+html {
+    display: block;
+    font-family: "Work Sans", Raleway, sans-serif;
+  }
+  
+  main {
+    margin-left: 295px;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid;
+    border-color: #000;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7c7c7;
+  }
+  
+  @media (max-width: 600px){
+    #navbar {
+      min-width: 0;
+    }
+  }
+  
+  #navbar a {
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border-top: 1px solid black;
+      
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  nav header {
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+  
+  section header {
+    font-weight: bold;  
+    font-size: 20pt;
+  }
+  
+  p {
+    font-family: "Work Sans", Raleway, sans-serif;
+  }
+  
+  .pre{
+    display: block;
+    white-space: pre-wrap   
+  }
+  
+  li {
+    padding: 10px;
+  }
+  
+  p a {
+    text-decoration: none;
+  }

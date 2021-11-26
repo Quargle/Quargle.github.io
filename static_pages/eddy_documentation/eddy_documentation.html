@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Eddy Documentation</header>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#versions">Versions</a>
+            <a class="nav-link" href="#requirements">Requirements</a>
+            <a class="nav-link" href="#installation">Installation</a>
+            <a class="nav-link" href="#MCNP">MCNP</a>
+            <a class="nav-link" href="#SCALE">SCALE</a>
+            <a class="nav-link" href="#future_plans">Future Plans</a>
+          </nav>
+          
+          <main id="main-doc">
+            <section class="main-section" id="introduction">
+              <header>Introduction</header>
+              <p>Eddy is a HTML output generator for MCNP and SCALE, it imports an MCNP or SCALE output file, extracts the important data, and writes it to a user-friendly HTML file.</p>
+              <p>It was created by Cerberus Nuclear, and is provided as an open-source project under the GPL.</p>
+              <p>Eddy is a purely python-based package, with results presented in a single HTML file (with CSS styling included in that file, and no javascript).</p>
+            </section>
+            
+            <section class="main-section" id="versions">
+              <header>Versions</header>
+              <p>Eddy is available as a Windows executable file and as a python package which can be found on PyPI, the Python Package Index, and can be installed via pip. The source code is also available on <a href="https://github.com/Cerberus-Nuclear/Eddy-Source" target="_blank">GitHub</a>. This documentation refers to the python package version of Eddy.</p>
+            </section>
+            
+            <section class="main-section" id="requirements">
+              <header>Requirements</header>
+              <p>Eddy requires Python version 3.6 or later to be installed. Eddy will install other dependencies, including the Jinja2 and importlib-resources packages.</p>
+              <p>If the source code version of Eddy is obtained from Github, these packages will need to be installed manually, and the pytest and pytese-mock packages will be required to run the unit tests.</p>
+            </section>
+            
+            <section class="main-section" id="installation">
+              <header>Installation</header>
+              <p>Eddy can be installed from pip using the command</p>
+              <code class="pre">pip install eddy-mc</code>
+              <p>and accessed from within a python program by using</p>
+              <code class="pre">from eddymc import eddy</code>
+              <code class="pre">eddy.main()</code>
+              <p>where <code>eddy.main()</code> takes two arguments; the file path of the MCNP/SCALE output file to be processed, and a scaling factor to be applied to any results</p>
+            </section>
+             
+            <section class="main-section" id="MCNP">
+              <header>MCNP</header>
+              <p>MCNP features include:</p>
+              <li>Eddy can convert F2, F4, F5, F6 and F6+ tallies</li>
+              <li>Eddy can accept average tallies, given in the form <code>F4:N (4 5)</code></li>
+              <li>Eddy can take an MCNP criticality output and show k-effective for the first half, second half and total calculation</li>
+              <li>Eddy will present a warning if an MCNP case was halted due to lost particles</li>
+              <li>Eddy will clearly present any FATAL ERROR messages in the MCNP output</li>
+              <li>Any valid HTML tags found in the MCNP output file will be escaped, preventing any unwanted HTML or javascript injected into the MCNP output from making its way into the HTML output file</li>
+              <li>For F2, F4 and F5 tallies, the units are presented as microSieverts per hour. The actual result from MCNP is typically multiplied by some conversion factor, so the tally output could be in any unit. The uSv/h units have been left in for now as this seems to be by far the most common conversion factor used for shielding calculations.</li>
+              <li>Eddy currently does not accept multi-particle tallies of the form <code>F4:N,P</code></li>
+            </section>
+            
+            <section class="main-section" id="SCALE">
+              <header>SCALE</header>
+              <p>Eddy also processes certain SCALE output cases.</p>
+              <p>Since SCALE is an extremely large program, Eddy cannot cover all SCALE cases, but should work for any MAVRIC shielding case.</p>
+              <p>It will also work for outputs that contain both ORIGEN and MAVRIC cases, although the ORIGEN results will not be reported by Eddy.</p>
+            </section>
+            
+            <section class="main-section" id="future_plans">
+              <header>Future Plans</header>
+              <p>The list of known bugs and outstanding issues for Eddy can be found on the <a href="https://github.com/Cerberus-Nuclear/Eddy-Source/issues" target="_blank">issue tracker</a> on Eddy's GitHub page.
+              <p>Some interest has been recieved in adapting Eddy to process MCBEND outputs. Cerberus Nuclear do not currently use MCBEND and so are unlikely to proceed with this unless outside funding can be provided.</p>
+            </section>
+          </main>
+    </body>
+
+
+</html>
