@@ -155,19 +155,21 @@ html {
     height: 20rem;
     margin: 3rem;
     border-radius: 1rem;
-    background-color: #457b9d;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     text-decoration: none;
     box-shadow: 0.5rem 0.5rem 0.2rem #1d3577;
+    background-color: #457b9d;
+    background-size: cover;
   }
   
   .project-tile h3 {
     height: 50%;
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
     padding: 2rem;
     padding-bottom: 1rem;
     display: flex;
@@ -180,7 +182,8 @@ html {
   .project-tile p {
     height: 50%;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 2rem;
     display: flex;
     justify-content: center;
